@@ -147,6 +147,62 @@
 				Source='./avcodec-58.dll'
 				KeyPath='yes'/>
 			</Component>
+			<Component Id='dll1' Guid='*'>
+			    <File
+				Id='dll1'
+				Name='avcodec-58.dll'
+				DiskId='1'
+				Source='./avcodec-58.dll'
+				KeyPath='yes'/>
+			</Component>
+			<Component Id='dll2' Guid='*'>
+			    <File
+				Id='dll2'
+				Name='avfilter-7.dll'
+				DiskId='1'
+				Source='./avfilter-7.dll'
+				KeyPath='yes'/>
+			</Component>
+			<Component Id='dll3' Guid='*'>
+			    <File
+				Id='dll3'
+				Name='avformat-58.dll'
+				DiskId='1'
+				Source='./avformat-58.dll'
+				KeyPath='yes'/>
+			</Component>
+			<Component Id='dll4' Guid='*'>
+			    <File
+				Id='dll4'
+				Name='avutil-56.dll'
+				DiskId='1'
+				Source='./avutil-56.dll'
+				KeyPath='yes'/>
+			</Component>
+			<Component Id='dll5' Guid='*'>
+			    <File
+				Id='dll5'
+				Name='pkgconf-3.dll'
+				DiskId='1'
+				Source='./pkgconf-3.dll'
+				KeyPath='yes'/>
+			</Component>
+			<Component Id='dll6' Guid='*'>
+			    <File
+				Id='dll6'
+				Name='swresample-3.dll'
+				DiskId='1'
+				Source='./swresample-3.dll'
+				KeyPath='yes'/>
+			</Component>
+			<Component Id='dll7' Guid='*'>
+			    <File
+				Id='dll7'
+				Name='swscale-5.dll'
+				DiskId='1'
+				Source='./swscale-5.dll'
+				KeyPath='yes'/>
+			</Component>
 		    </Directory>
 		</Directory>
 	    </Directory>
@@ -171,6 +227,13 @@
 	    <ComponentRef Id='binary1'/>
 	    <ComponentRef Id='binary2'/>
 	    <ComponentRef Id='dll0'/>
+	    <ComponentRef Id='dll1'/>
+	    <ComponentRef Id='dll2'/>
+	    <ComponentRef Id='dll3'/>
+	    <ComponentRef Id='dll4'/>
+	    <ComponentRef Id='dll5'/>
+	    <ComponentRef Id='dll6'/>
+	    <ComponentRef Id='dll7'/>
 
 	    <Feature
 		Id='Environment'
