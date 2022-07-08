@@ -139,14 +139,6 @@
 				Source='$(var.CargoTargetBinDir)/sanzu_server.exe'
 				KeyPath='yes'/>
 			</Component>
-			<Component Id='binary0' Guid='*'>
-			    <File
-				Id='exe0'
-				Name='sanzu_proxy.exe'
-				DiskId='1'
-				Source='$(var.CargoTargetBinDir)/sanzu_proxy.exe'
-				KeyPath='yes'/>
-			</Component>
 			<Component Id='dll0' Guid='*'>
 			    <File
 				Id='dll0'
