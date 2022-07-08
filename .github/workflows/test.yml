@@ -128,6 +128,13 @@ jobs:
       with:
         name: sanzu_server.exe
         path: ./target/release/sanzu_server.exe
+
+    - name: Upload resulting 'sanzu-0.1.0-x86_64.msi'
+      uses: actions/upload-artifact@v1
+      with:
+        name: sanzu-0.1.0-x86_64.msi
+        path: ./target/wix/sanzu-0.1.0-x86_64.msi
+
   # fmt:
   #   runs-on: ubuntu-latest
   #   steps:
