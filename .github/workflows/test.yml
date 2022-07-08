@@ -85,12 +85,18 @@ jobs:
       with:
         toolchain: stable
 
+    - name: install cargo wix
+      run: |
+        cargo install --git https://github.com/volks73/cargo-wix cargo-wix
+
     - name: prepare vcpkg
       run: |
         vcpkg integrate install
+
     - name: install dep
       run: |
         vcpkg install ffmpeg:x64-windows
+
     - name: Build
       env:
         RUSTFLAGS: -D warnings
@@ -98,6 +104,10 @@ jobs:
       with:
         command: build
         args: --release --verbose -p sanzu --no-default-features
+
+    - name: run cargo wix
+      run: |
+         cargo wix --package=sanzu
 
     - name: Upload resulting 'sanzu_client.exe'
       uses: actions/upload-artifact@v1
