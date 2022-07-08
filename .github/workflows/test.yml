@@ -107,7 +107,7 @@ jobs:
 
     - name: run cargo wix
       run: |
-         cargo wix --package=sanzu
+         cargo wix --nocapture --package=sanzu
 
     - name: Upload resulting 'sanzu_client.exe'
       uses: actions/upload-artifact@v1
