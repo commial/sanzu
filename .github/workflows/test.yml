@@ -135,6 +135,23 @@ jobs:
         name: sanzu-0.1.0-x86_64.msi
         path: ./target/wix/sanzu-0.1.0-x86_64.msi
 
+    - name: Upload resulting 'sanzu-0.1.0-x86_64.msi'
+      uses: actions/upload-artifact@v1
+      with:
+        name: sanzu-0.1.0-x86_64.msi
+        path: ./target/wix/sanzu-0.1.0-x86_64.msi
+
+    - name: cp files
+      run: |
+         cp ./target/release/build/ffmpeg-sys-next-*/out/*.dll .
+
+    - name: Upload resulting 'dll'
+      uses: actions/upload-artifact@v1
+      with:
+        name: avcodec-58.dll
+        path: ./avcodec-58.dll
+
+
   # fmt:
   #   runs-on: ubuntu-latest
   #   steps:
