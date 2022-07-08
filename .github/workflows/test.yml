@@ -109,6 +109,10 @@ jobs:
         command: build
         args: --release --verbose -p sanzu --no-default-features
 
+    - name: cp files
+      run: |
+         cp ./target/release/build/ffmpeg-sys-next-*/out/*.dll .
+
     - name: run cargo wix
       run: |
          cargo wix --nocapture --package=sanzu
@@ -140,10 +144,6 @@ jobs:
       with:
         name: sanzu-0.1.0-x86_64.msi
         path: ./target/wix/sanzu-0.1.0-x86_64.msi
-
-    - name: cp files
-      run: |
-         cp ./target/release/build/ffmpeg-sys-next-*/out/*.dll .
 
     - name: Upload resulting 'dll'
       uses: actions/upload-artifact@v1
