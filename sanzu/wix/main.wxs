@@ -150,9 +150,9 @@
 			<Component Id='dll1' Guid='*'>
 			    <File
 				Id='dll1'
-				Name='avcodec-58.dll'
+				Name='avdevice-58.dll'
 				DiskId='1'
-				Source='./avcodec-58.dll'
+				Source='./avdevice-58.dll'
 				KeyPath='yes'/>
 			</Component>
 			<Component Id='dll2' Guid='*'>
